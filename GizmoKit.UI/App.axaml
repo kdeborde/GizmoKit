@@ -1,0 +1,21 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="GizmoKit.UI.App"
+             xmlns:local="using:GizmoKit.UI"
+             RequestedThemeVariant="Dark">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+  
+    <Application.Styles>
+        <FluentTheme />
+      <StyleInclude Source="avares://GizmoKit.UI/Assets/Styles/Icons.axaml"/>
+    </Application.Styles>
+
+  <Application.Resources>
+    <Brush x:Key="MacOsWindowTitleColor">#4D4D4D</Brush>
+    <Brush x:Key="MacOsTitleBarBackground">#DEE1E6</Brush>
+  </Application.Resources>
+</Application>
